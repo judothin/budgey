@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Budgeter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Budgey buddy</h1>
+
+    <form onsubmit="submission_handler(); return false;">
+
+        <div>
+            <label for="weeklyincome">Weekly income after taxes: </label>
+            <input type="number" id="weeklyincome" name="weeklyincome">
+        </div>
+
+        <div>
+            <label for="avggas">Avg gas price: </label>
+            <input type="number" id="avggas" name="avggas" step="any">
+        </div>
+
+        <div>
+            <label for="milespg">How many mpg does your car get? </label>
+            <input type="number" id="milespg" name="milespg">
+        </div>
+
+        <div>
+            <label for="milesdriven">How many miles do you drive per day? </label>
+            <input type="number" id="milesdriven" name="milesdriven">
+        </div>
+
+        <div>
+            <label for="util">Monthly cost of utilities: </label>
+            <input type="number" id="util" name="util">
+        </div>
+
+        <div>
+            <label for="rent">Monthly cost of rent: </label>
+            <input type="number" id="rent" name="rent">
+        </div>
+
+        <div>
+            <label for="groc">Monthly cost of groceries: </label>
+            <input type="number" id="groc" name="groc">
+        </div>
+
+        <div>
+            <label for="eato">Monthly spent on eating out: <output></output>: </label>
+            <input type="number" id="eato" name="eato">
+        </div>
+
+        <div>
+            <label for="sub">Total spent per month on subscriptions: </label>
+            <input type="number" id="sub" name="sub">
+        </div>
+
+        <div>
+            <label for="phone">Cost of your phone bill: </label>
+            <input type="number" id="phone" name="phone">
+        </div>
+
+        <div>
+            <label for="wifi">Cost of WIFI bill: </label>
+            <input type="number" id="wifi" name="wifi">
+        </div>
+
+        <div>
+            <label for="carp">Car payment cost: </label>
+            <input type="number" id="carp" name="carp">
+        </div>
+
+        <div>
+            <label for="carins">Car insurance cost: </label>
+            <input type="number" id="carins" name="carins">
+        </div>
+
+        <button type="submit">Calculate</button>
+    </form>
+
+    <p id="gascost">Total amount spent on gas: $0.00</p>
+    <p id="left">Total amount left to save and/or spend: $0.00</p>
+</body>
+
+</html>
