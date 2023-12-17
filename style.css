@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-h1 {
+header {
     text-align: center;
     background: linear-gradient(to right, #8e44ad, #3498db);
     -webkit-background-clip: text; /* Clip the background to the text */
@@ -15,6 +15,20 @@ h1 {
     margin-bottom: 20px;
     padding: 10px; /* Added padding for better visibility */
     border-radius: 5px; /* Added border-radius for a rounded look */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+/* Adjustments for better consistency */
+header p {
+    color: #ecf0f1; /* Light Blue Text */
+}
+
+/* Apply the same font-family as the rest of the site */
+header {
+    font-family: 'nasalization-rg', Helvetica, sans-serif;
 }
 form {
     max-width: 800px;
@@ -43,26 +57,48 @@ input {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #8e44ad; /* Purple Border */
-    border-radius: 5px;
+    border: 1px solid transparent; /* Set initial transparent border */
+    border-image: linear-gradient(to right, #8e44ad, #3498db);
+    border-image-slice: 1;
     background-color: #2c3e50; /* Darker Blue Background */
     color: #ecf0f1; /* Light Blue Text */
+    border-radius: 8px; /* Increased border-radius for rounded corners */
+    outline: none; /* Remove the default focus outline */
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background: linear-gradient(to right, #8e44ad, #3498db); /* Gradient from Purple to Blue */
-    color: #ecf0f1; /* Light Blue Text */
-    border: none;
-    border-radius: 5px;
+/* Apply the border color on focus for better compatibility */
+input:focus {
+    border-color: #8e44ad; /* Purple Border */
+}
+
+.button {
+    --😀: linear-gradient(to right, #8e44ad, #3498db);
+    --😀😀: #4924a0;
+    --😀😀😀: #4415581c;
     cursor: pointer;
-    font-weight: bold;
-}
-
-button:hover {
-    background: linear-gradient(to right, #663399, #2980b9); /* Gradient on hover */
-}
+    width: calc(200% - 20px);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.125em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    background: var(--😀);
+    border: 2px solid var(--😀😀);
+    border-radius: 0rem;
+    box-shadow: 0 8px 0 var(--😀😀);
+    transition: all .1s ease;
+    filter: drop-shadow(0 15px 20px var(--😀😀😀));
+  }
+  
+  .button:active {
+    letter-spacing: 0px;
+    transform: skew(-4deg) translateY(8px);
+    box-shadow: 0 0 0 var(--😀😀😀);
+  }
 
 #result-box {
     display: flex;
@@ -73,17 +109,18 @@ button:hover {
 #gascost,
 #left {
     text-align: center;
-    padding: 20px;
+    padding: 18px;
     background-color: #8e44ad; /* Purple */
     color: #ecf0f1; /* Light Blue Text */
-    border-radius: 5px;
+    border-radius: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 5px;
-    width: 48%;
-    max-width: 800px; /* Adjusted maximum width */
+    width: 44%;
+    max-width: 735px; /* Adjusted maximum width */
     margin: auto; /* Center the box */
     margin-bottom: 20px; /* Added margin bottom for spacing */
 }
+
 
 
 
