@@ -1,39 +1,42 @@
 body {
     font-family: 'nasalization-rg', Helvetica, sans-serif;
-    background-color: #2c3e50; /* Dark Blue */
-    color: #ecf0f1; /* Light Blue Text */
+    background-color: #1a1a1a; /* Darker Gray */
+    color: #ffffff; /* White Text */
     margin: 0;
     padding: 0;
+    margin-top: 20px;
 }
 
 header {
     text-align: center;
-    background: linear-gradient(to right, #8e44ad, #3498db);
+    background: linear-gradient(to right, #6c63ff, #a44dff); /* Dark Purple to Light Purple */
     -webkit-background-clip: text; /* Clip the background to the text */
     background-clip: text;
     color: transparent; /* Make text transparent */
     margin-bottom: 20px;
     padding: 10px; /* Added padding for better visibility */
     border-radius: 5px; /* Added border-radius for a rounded look */
+    margin-top: 20px; /* Added margin-top to move the text down */
 }
 
 header h1 {
     margin: 0; /* Remove default margin */
+    margin-top: 10px;
 }
 
 /* Adjustments for better consistency */
 header p {
-    color: #ecf0f1; /* Light Blue Text */
+    color: #ffffff; /* White Text */
+    margin-top: 10px;
 }
 
 /* Apply the same font-family as the rest of the site */
-header {
-    font-family: 'nasalization-rg', Helvetica, sans-serif;
-}
+
+
 form {
     max-width: 800px;
     margin: 20px auto;
-    background-color: #34495e; /* Darker Blue */
+    background-color: #292929; /* Dark Gray */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -45,36 +48,37 @@ form {
 form div {
     width: 48%;
     margin-bottom: 10px;
+    border-radius: 10px; /* Added border-radius for a rounded look */
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    color: #ecf0f1; /* Light Blue Text */
+    color: #ffffff; /* White Text */
 }
 
 input {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid transparent; /* Set initial transparent border */
-    border-image: linear-gradient(to right, #8e44ad, #3498db);
-    border-image-slice: 1;
-    background-color: #2c3e50; /* Darker Blue Background */
-    color: #ecf0f1; /* Light Blue Text */
-    border-radius: 8px; /* Increased border-radius for rounded corners */
+    border: none; /* Remove the default border */
+    background-color: #1a1a1a; /* Darker Gray Background */
+    color: #ffffff; /* White Text */
+    border-radius: 8px; /* Rounded corners for all sides */
     outline: none; /* Remove the default focus outline */
+    border: 2px solid #6c63ff; /* Purple Border */
 }
 
 /* Apply the border color on focus for better compatibility */
 input:focus {
-    border-color: #8e44ad; /* Purple Border */
+    border-radius: 8px; /* Rounded corners for all sides */
+    border: 2px solid #6c63ff; /* Purple Border */
 }
 
 .button {
-    --😀: linear-gradient(to right, #8e44ad, #3498db);
-    --😀😀: #4924a0;
-    --😀😀😀: #4415581c;
+    --cro: linear-gradient(to right, #6c63ff, #a44dff); /* Dark Purple to Light Purple */
+    --crow: #4924a0;
+    --crows: #4415581c;
     cursor: pointer;
     width: calc(200% - 20px);
     height: 48px;
@@ -85,20 +89,20 @@ input:focus {
     font-size: 1.125em;
     font-weight: 800;
     letter-spacing: 2px;
-    color: #fff;
-    background: var(--😀);
-    border: 2px solid var(--😀😀);
-    border-radius: 0rem;
-    box-shadow: 0 8px 0 var(--😀😀);
+    color: #ffffff; /* White Text */
+    background: var(--cro);
+    border: 2px solid var(--crow);
+    border-radius: 24px; /* Increased border-radius for rounded corners */
+    box-shadow: 0 8px 0 var(--crow);
     transition: all .1s ease;
-    filter: drop-shadow(0 15px 20px var(--😀😀😀));
-  }
-  
-  .button:active {
+    filter: drop-shadow(0 15px 20px var(--crows));
+}
+
+.button:active {
     letter-spacing: 0px;
     transform: skew(-4deg) translateY(8px);
-    box-shadow: 0 0 0 var(--😀😀😀);
-  }
+    box-shadow: 0 0 0 var(--crows);
+}
 
 #result-box {
     display: flex;
@@ -106,21 +110,30 @@ input:focus {
     margin-top: 20px;
 }
 
-#gascost,
-#left {
+#calculations_box {
     text-align: center;
     padding: 18px;
-    background-color: #8e44ad; /* Purple */
-    color: #ecf0f1; /* Light Blue Text */
-    border-radius: 0px;
+    background-color: #6c63ff; /* Dark Purple */
+    color: #ffffff; /* White Text */
+    border-radius: 24px; /* Increased border-radius for rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 5px;
     width: 44%;
     max-width: 735px; /* Adjusted maximum width */
     margin: auto; /* Center the box */
     margin-bottom: 20px; /* Added margin bottom for spacing */
+    /* FILEPATH: /e:/Personal Projects/Budgeting website/style.css */
+
+    /* BEGIN: ed8c6549bwf9 */
+    font-family: 'Montserrat', Arial, sans-serif;
+    /* END: ed8c6549bwf9 */
 }
 
+@media screen and (max-width: 768px) {
+    form div {
+        width: 100%;
+    }
+}
 
 
 
