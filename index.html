@@ -23,7 +23,7 @@
         </div>
 
         <div>
-            <label for="avggas">Avg gas price per gallon where you live: </label>
+            <label for="avggas">Avg gas price: </label>
             <input type="number" id="avggas" name="avggas" step="any">
         </div>
 
@@ -48,7 +48,7 @@
         </div>
 
         <div>
-            <label for="groc">Total monthly cost of groceries: </label>
+            <label for="groc">Monthly cost of groceries: </label>
             <input type="number" id="groc" name="groc">
         </div>
 
@@ -63,7 +63,7 @@
         </div>
 
         <div>
-            <label for="phone">Cost of your phone bill per month: </label>
+            <label for="phone">Cost of your phone bill: </label>
             <input type="number" id="phone" name="phone">
         </div>
 
@@ -86,9 +86,11 @@
             Calculate
           </button>
     </form>
-
-    <p id="gascost">Total amount spent on gas: $0.00</p>
-    <p id="left">Total amount left to save and/or spend: $0.00</p>
+    
+    <div id="calculations_box">
+        <p id="gascost">Total amount spent on gas: $0.00</p>
+        <p id="left">Total amount left to save and/or spend: $0.00</p>
+    </div>
 </body>
 
 </html>
