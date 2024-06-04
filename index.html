@@ -12,7 +12,6 @@
 <body>
     <header>
         <h1>Budgey Buddy</h1>
-        <p>A simple and easy way for you to calculate your spending</p>
     </header>
 
     <form onsubmit="submission_handler(); return false;">
@@ -82,7 +81,7 @@
             <input type="number" id="carins" name="carins">
         </div>
 
-        <button class="button">
+        <button class="button" id="calculate_button">
             Calculate
           </button>
     </form>
@@ -91,6 +90,7 @@
         <p id="gascost">Total amount spent on gas: $0.00</p>
         <p id="left">Total amount left to save and/or spend: $0.00</p>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

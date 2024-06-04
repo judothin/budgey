@@ -13,7 +13,7 @@ header {
     -webkit-background-clip: text; /* Clip the background to the text */
     background-clip: text;
     color: transparent; /* Make text transparent */
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     padding: 10px; /* Added padding for better visibility */
     border-radius: 5px; /* Added border-radius for a rounded look */
     margin-top: 20px; /* Added margin-top to move the text down */
@@ -121,12 +121,13 @@ input:focus {
     width: 44%;
     max-width: 735px; /* Adjusted maximum width */
     margin: auto; /* Center the box */
-    margin-bottom: 20px; /* Added margin bottom for spacing */
+    margin-bottom: 200px; /* Added margin bottom for spacing */
     /* FILEPATH: /e:/Personal Projects/Budgeting website/style.css */
 
     /* BEGIN: ed8c6549bwf9 */
     font-family: 'Montserrat', Arial, sans-serif;
     /* END: ed8c6549bwf9 */
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
